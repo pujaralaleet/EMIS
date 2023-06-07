@@ -1,109 +1,198 @@
-<!DOCTYPE html>
-<html>  
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<style>  
-body{  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
-}  
-.container {  
-    padding: 30px;  
-  background-color: lightblue;  
-}  
+
+<html>
+  <head>
+
+  <title>register page</title>
+</head>
+
+<style>
+  body {
+    background-image: url("View/img/p1.jpg");
+    background-color: #cccccc;
+  }
+</style>
+
+<form name="iksk" method="post" action="" enctype="">
   
-input[type=text], input[type=password], textarea {  
-  width: 100%;  
-  padding: 15px;  
-  margin: 5px 0 22px 0;  
-  display: inline-block;  
-  border: none;  
-  background: #f1f1f1;  
-}  
-input[type=text]:focus, input[type=password]:focus {  
-  background-color: orange;  
-  outline: none;  
-}  
- div {  
-            padding: 10px 0;  
-         }  
-hr {  
-  border: 1px solid #f1f1f1;  
-  margin-bottom: 25px;  
-}  
-.registerbtn {  
-  background-color: #4CAF50;  
-  color: white;  
-  padding: 16px 20px;  
-  margin: 8px 0;  
-  border: none;  
-  cursor: pointer;  
-  width: 100%;  
-  opacity: 0.9;  
-}  
-.registerbtn:hover {  
-  opacity: 1;  
-}  
-</style>  
-</head>  
-<body>  
-<form action="registercontroller.php" method="post"> 
-  <div class="container">  
-  <center>  <h1> Student Registeration Form</h1> </center>  
-  <hr>  
-  <label> Firstname </label>   
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
-<label> Middlename: </label>   
-<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
-<label> Lastname: </label>    
-<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
-<div>  
-<label>   
-class:  
-</label>   
+
+    <tr>
+      
+          <td width="74%" valign="top"><table width="739" height="895" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000033" bgcolor="#FFFFFF">
+            <tr height="">
+              <td height="auto" colspan="6" align="center" bordercolor="#CC0000" bgcolor=""></td>
+            </tr>
+            <tr>
+              <td align="right" height="44">
+              <div align="center" class="style5 style15"><strong>Name</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="y_name" type="text" size="50" placeholder="Enter Name......" />
+                  <br>
+                </div></td>
+            </tr>
+            
+            <tr>
+              <td height="39" align="right">
+              <div align="center" class="style5 style15"><strong>Gender </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <label>
+                  <select name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                  </label>
+                </div></td>
+            </tr>
+            
+            <tr>
+              <td height="33" align="right">
+              <div align="center" class="style5 style15"><strong>Date of Birth </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="dob" type="date" size="50" placeholder="Enter date of birth ......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="32" align="right">
+              <div align="center" class="style5 style15"><strong>Father's Name</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="f_name" type="text" size="50" placeholder="Enter Father's Name......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="33" align="right">
+              <div align="center" class="style5 style15"><strong>Nationality</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="nationality" type="text" size="50" placeholder="Enter the Nationality......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="34" align="right">
+              <div align="center" class="style5 style15"><strong>Marital status</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <label>
+                  <select name="m_satus">
+                    <option>Married</option>
+                    <option>Unmarried</option>
+                  </select>
+                  </label>
+                </div></td>
+            </tr>
+            <tr>
+              <td height="35" align="right">
+              <div align="center" class="style5 style15"><strong>Address</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="address" type="text" size="50" placeholder="Enter Address......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="31" align="right">
+              <div align="center" class="style5 style15"><strong>E-mail</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="e_mail" type="text" size="50" placeholder="Enter e_mail......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="35" align="right">
+              <div align="center" class="style5 style15"><strong>Mobile Number </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="a_r_claimed" type="text" size="50" placeholder="Enter Mobile Number......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="32" align="right">
+              <div align="center" class="style5 style15"><strong>Educational Qualification</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="edu_quali" type="text" size="50" placeholder="Enter Education qualification....." />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="32" align="right">
+              <div align="center" class="style5 style15"><strong>Upload Image</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="image" type="file" size="50"/>
+                </div></td>
+            </tr>
+            <tr>
+              <td height="30" align="right">
+              <div align="center" class="style5 style15"><strong>Registraation-id</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="reg_id" type="text" size="50" placeholder="Enter regstration-id......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="34" align="right">
+              <div align="center" class="style5 style15"><strong>Registration Date</strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="tra_date" type="date" size="50" placeholder="Enter Registration Date......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="30" align="right">
+              <div align="center" class="style5 style15"><strong>Certificate Number </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="fee_paid" type="text" size="50" placeholder="Enter Certificate Number......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="32" align="right">
+              <div align="center" class="style5 style15"><strong>Roll Number </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="agency" type="text" size="50" placeholder="Enter Roll Number......" />
+                </div></td>
+            </tr>
+            <tr>
+              <td height="34" align="right">
+              <div align="center" class="style5 style15"><strong>Deate of issue </strong></div></td>
+              <td>
+                
+                <div align="left">
+                  <input name="m_payment" type="date" size="50" placeholder="Enter Date of issue......" />
+                </div></td>
+            </tr>
+            
+            <tr>
+            
+            </tr>
+          </table></td>
+        </tr>
+      </td>
+    </tr>
+
+    <button type="submit" class="btn btn-primary">submit</button><br>
   
-<select>  
-<option value="Course">Class</option>  
-<option value="class 1 ">class 1</option>  
-<option value="class 2">class 2</option>  
-<option value="class 3">class 3</option>  
-<option value="class 4">class 4</option>  
-<option value="class 5">class 5</option>  
-<option value="class 6">class 6</option>   
-<option value="class 7 ">class 7</option>  
-<option value="class 8">class 8</option>  
-<option value="class 9">class 9</option>  
-<option value="class 10">class 10</option>  
-<option value="class 11">class 11</option>  
-<option value="class 12">class 12</option>  
-</select>  
-</div>  
-<div>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" value="Male" name="gender"  > Male   
-<input type="radio" value="Female" name="gender"> Female   
-<input type="radio" value="Other" name="gender"> Other  
-  
-</div>  
-<label>   
-Phone :  
-</label>  
-<input type="text" name="country code" placeholder="Country Code"  value="+97" size="2"/>   
-<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
-Current Address :  
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
-</textarea>  
- <label for="email"><b>Email</b></label>  
- <input type="text" placeholder="Enter Email" name="email" required>  
-  
-    <label for="psw"><b>Password</b></label>  
-    <input type="password" placeholder="Enter Password" name="psw" required>  
-  
-    <label for="psw-repeat"><b>Re-type Password</b></label>  
-    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
-    <button type="submit" class="registerbtn">Register</button>    
-</form>  
-</body>  
-</html>  
+</form>
+
+
+
+</body>
+</html>
+

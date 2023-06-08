@@ -1,7 +1,7 @@
 <!DOCTYPE html>   
 <html>   
 <head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
+<meta name="viewport" content="width=50%-width, initial-scale=1">  
 <title> Login Page </title>  
 <style>   
 Body {  
@@ -10,7 +10,7 @@ Body {
 }  
 button {   
        background-color: #4CAF50;   
-       width: 100%;  
+       width: 10%;  
         color: orange;   
         padding: 15px;   
         margin: 10px 0px;   
@@ -21,18 +21,18 @@ button {
         border: 3px solid #f1f1f1;   
     }   
  input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
+        width: 50%;   
+        margin: 12px 0;  
         padding: 12px 20px;   
         display: inline-block;   
-        border: 2px solid green;   
+        border: 2px solid blue;   
         box-sizing: border-box;   
     }  
  button:hover {   
         opacity: 0.7;   
     }   
   .cancelbtn {   
-        width: auto;   
+        width: 10%;   
         padding: 10px 18px;  
         margin: 10px 5px;  
     }   
@@ -40,24 +40,32 @@ button {
      
  .container {   
         padding: 25px;   
-        background-color: lightblue;  
+        background-color:purple;  
     }   
 </style>   
 </head>    
 <body>    
-    <center> <h1> Admin Login  </h1> </center>   
-    <form>  
-        <div  class="container"> 
-            <div class="" > 
+    <center> <h1>Admin Login Form </h1> </center>   
+    
+   
+      <form>  
+        <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" required>  
+            <br>
             <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <br>  
+           
+           <center> <button type="submit">Login</button>  
+            <br> 
+            <input type="checkbox" checked="checked"> Remember me  
+            <br> 
             <button type="button" class="cancelbtn"> Cancel</button>   
             Forgot <a href="#"> password? </a>   
+           </center>
         </div>   
-    </form>     
+    </form>  
+   
 </body>     
-</html>  
+</html>     

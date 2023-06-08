@@ -3,10 +3,11 @@
 <?php  require_once("header.php");?>
 <style>
   body {
-    background-image: url("view/img/p1.jpeg");
+    background-image: url("View/img/dadel.jpg");
     /* background-color: #cccccc; */
   }
   table{
+    -background-image: url("View/img/dadel.jpg");
    
     color: purple;
   }
@@ -19,7 +20,7 @@
   }
 </style>
 
-<form name="iksk" method="post" action="" enctype="">
+<form name="iksk" method="post" action="registercontroller.php" enctype="">
 
 <table width="739" height="895" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000033" bgcolor="#FFFFFF">
            
@@ -211,12 +212,12 @@
 </body>
 
 </html>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
   crossorigin="anonymous"></script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      -->

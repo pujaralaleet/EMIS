@@ -8,6 +8,7 @@ require_once("config.php");
     $pwd = $_POST['pwd'];
 
     print_r($uname);
+    
  }
 
 ?>

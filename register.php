@@ -20,7 +20,7 @@
   }
 </style>
 
-<form name="iksk" method="post" action="registercontroller.php" enctype="">
+<form name="iksk" method="POST" action="registercontroller.php" enctype="">
 
 <table width="739" height="895" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000033" bgcolor="#FFFFFF">
            
@@ -70,7 +70,7 @@
             </tr>
             <tr>
               <td height="32" align="right">
-              <div align="center" class="style5 style15"><strong>Father's Name</strong></div></td>
+              <div align="center" class="style5 style15"><strong>Father Name</strong></div></td>
               <td>
                 
                 <div align="left">
@@ -183,11 +183,11 @@
             </tr>
             <tr>
               <td height="34" align="right">
-              <div align="center" class="style5 style15"><strong>Date of Birth </strong></div></td>
+              <div align="center" class="style5 style15"><strong>Register of date </strong></div></td>
               <td>
                 
                 <div align="left">
-                  <input name="m_payment" type="date" size="50" placeholder="Enter Date of issue......" />
+                  <input name="m_payment" type="date" size="50" placeholder="Enter Register of issue......" />
                 </div></td>
             </tr>
           
@@ -221,3 +221,4 @@
 <script src="js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
   crossorigin="anonymous"></script>
 
+``

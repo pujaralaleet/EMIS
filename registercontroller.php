@@ -1,85 +1,33 @@
 <?php
+$name = $_POST['y_name'];
+$sender = $_POST['gender'];
+$Date_of_Birth = $_POST['dob'];
+$Father_Name = $_POST['f_name'];
+$Nationality = $_POST['nationality'];
+$Address = $_POST['address'];
+$E_mail = $_POST['e_mail'];
+$Mobile_Number = $_POST['a_r_claimed'];
+$Educational_Qualification = $_POST['edu_quali'];
+$Upload_Image = $_POST['image'];
+$Registration_id = $_POST['reg_id'];
+$Registration_Date = $_POST['tra_date'];
+$Certificate_Number = $_POST['fee_paid'];
+$Roll_Number = $_POST['agency'];
+$Register_of_date = $_POST['m_payment'];
 
-session_start();
+// Include the database connection file
+include "databaseconnection.php";
 
-if(!isset($_SESSION['user_name'])){
-    header("location: login.php");
-    }
-else {
+// Perform database operations using the connection ($conn) here
+// For example, you can insert the form data into a table:
+$sql = "INSERT INTO register(name, sender, Date_of_Birth, Father_Name, Nationality, Address, E_mail, Mobile_Number, Educational_Qualification, Upload_Image, Registration_id, Registration_Date, Certificate_Number, Roll_Number, Register_of_date)
+        VALUES ('$name', '$sender', '$Date_of_Birth', '$Father_Name', '$Nationality', '$Address', '$E_mail', '$Mobile_Number','$Educational_Qualification', '$Upload_Image', '$Registration_id', '$Registration_Date', '$Certificate_Number', '$Roll_Number', '$Register_of_date')";
+
+
+if (mysqli_query($conn, $sql)) {
+    echo "Data inserted successfully!";
+} else {
+    echo "Error inserting data: " . mysqli_error($conn);
+}
 ?>
-<?php 
-include("connect.php");
-$sql="SELECT * FROM data";
 
-$query=mysql_query($sql)or die(mysql_error());
-
-?>
-<html>
-<style type="text/css">
-<!--
-.style1 {
-    color: #333399;
-    font-weight: bold;
-}
-a:link {
-    color: #009900;
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-    color: #0000FF;
-}
-a:hover {
-    text-decoration: none;
-    color: #FF0000;
-}
-a:active {
-    text-decoration: none;
-    color: #FFFF00;
-}
-a {
-    font-weight: bold;
-}
--->
-</style>
-<body>
-<h2 align='center'><?php echo @$_GET['deleted']; ?></h2>
-<form method="" action="displaypage.php">
-<table width="1000" border="1" align="center">
-
-  <tr>
-    <td><?php include('header.php');?></td>
-  </tr>
-  <tr>
-    <td><table width="100%" border="1" bgcolor="#FFFFFF">
-      <tr>
-        <td bgcolor="#9966CC"><span class="style1">ID</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Name</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Gender</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Date Of Birth</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Father Name</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Reg. No</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Roll No.</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Print</span></td>
-        <td bgcolor="#9966CC"><span class="style1">Delete</span></td>
-      </tr>
-        <?php while($row=mysql_fetch_array($query)){?>
-      <tr bgcolor="#FFCCFF">
-        <td><?php echo $row['0']?></td>
-        <td><?php echo $row['1']?></td>
-        <td><?php echo $row['2']?></td>
-        <td><?php echo $row['3']?></td>
-        <td><?php echo $row['4']?></td>
-        <td><?php echo $row['14']?></td>
-        <td><?php echo $row['15']?></td>
-        <td><a href="printpage.php?print=<?php echo$row['0'];?>";>Print Now</a></td>
-        <td><a href='delete_page.php?del_page=<?php echo $row['0']; ?>'>Delete</a></td>
-      </tr>
-      <?php } ?>
-    </table></td>
-  </tr>
-</table>
-</form>
-</body>
-</html>
-<?php } ?>

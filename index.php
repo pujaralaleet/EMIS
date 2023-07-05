@@ -1,5 +1,5 @@
 <?php require_once("header.php") ?>
-
+<center>
 <div class="col-sm-12 col-sm-8">
      <div class="form-" >
 <legend style="color:white;">  User's Login</legend>
@@ -26,6 +26,7 @@
 <span class="psw" style="float:right;"> <a href="#" style="color:white !important;"> Forget Password?</a></span>
 </div>
 </div>
+</center>
 
 
 </form>
